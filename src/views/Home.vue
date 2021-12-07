@@ -1,6 +1,12 @@
 <template>
   <Darkmode/>
-  <h1>hello</h1>
+  <div class="home">
+    <section class="hero">
+      <div class="hero-text container">
+        <h4>StephanGriesel</h4>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
