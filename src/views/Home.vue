@@ -11,12 +11,12 @@
 
 <script>
 
-import Darkmode from '../components/Darkmode.vue'
+import Darkmode from '../components/Darkmode.vue';
 
 export default {
-  name:"Home",
+  name: 'Home',
   components: {
-    Darkmode
+    Darkmode,
 
   },
 };
