@@ -1,17 +1,15 @@
 <template>
-<Darkmode/>
+<div class="app">
+  <router-view />
+</div>
 </template>
 
 <script>
-import Darkmode from './components/Darkmode.vue';
 
 import './assets/tailwind.css';
 
 export default {
   name: 'App',
-  components: {
-    Darkmode,
-  },
 };
 </script>
 
