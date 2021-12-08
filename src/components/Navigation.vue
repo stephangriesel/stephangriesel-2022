@@ -11,7 +11,7 @@
         <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
       </ul>
       <div class="icon">
-        <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active' : mobileNav}"></i>
+        <i @click="toggleMobileNav" v-show="mobile" class="fa fa-bars" :class="{'icon-active' : mobileNav}"></i>
       </div>
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
@@ -27,7 +27,17 @@
 
 <script>
 
-export default {};
+export default {
+  name: 'navigation',
+  data() {
+    return {
+      scrollPosition: null,
+      mobile: true,
+      mobileNav: null,
+      windowWidth: null,
+    };
+  },
+};
 
 </script>
 
@@ -72,13 +82,19 @@ header {
         color:#989809;
         border-color: #989809;
       }
-
     }
-
-      .branding {
-        display:flex;
-        align-items: center;
+    .branding {
+      display:flex;
+      align-items: center;
       }
-  }
+
+    .icon {
+      display:flex;
+      align-items:center;
+      position:absolute;
+      top:15px;
+      left:24px;
+    }
+    }
 }
 </style>
