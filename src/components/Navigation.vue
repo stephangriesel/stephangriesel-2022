@@ -2,9 +2,7 @@
   <header :class="{'scrolled-nav': scrollPosition}">
     <nav>
       <div class="branding">
-        <div>
           S
-        </div>
       </div>
       <ul v-show="!mobile" class="navigation">
         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
@@ -33,6 +31,54 @@ export default {};
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 
+header {
+  z-index:99;
+  width:100%;
+  /* position:fixed; */
+  transition: 0.5 ease all;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding:12px 0;
+    transition:0.5s ease all;
+    width:90%;
+    margin:0 auto;
+    @media(min-width: 1140px){
+      max-width:1140px;
+    }
+
+    ul,
+    .link {
+      font-weight:500;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    li {
+      text-transform: uppercase;
+      padding:16px;
+      margin-left:16px;
+    }
+
+    .link {
+      font-size:14px;
+      transition:0.5s ease all;
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        color:#989809;
+        border-color: #989809;
+      }
+
+    }
+
+      .branding {
+        display:flex;
+        align-items: center;
+      }
+  }
+}
 </style>
