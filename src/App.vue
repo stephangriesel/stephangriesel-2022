@@ -1,5 +1,6 @@
 <template>
-<div class="app">
+<div class="app dark:bg-gray-800 dark:text-gray-200">
+  <Navigation />
   <router-view />
 </div>
 </template>
@@ -7,9 +8,13 @@
 <script>
 
 import './assets/tailwind.css';
+import Navigation from './components/Navigation.vue';
 
 export default {
   name: 'App',
+  components: {
+    Navigation,
+  },
 };
 </script>
 
