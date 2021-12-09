@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-lg flex bg-gray-600 items-center justify-center mx-auto absolute top-1 right-0 left-3/3 mt-2 mr-2">
+    <div class="rounded-lg flex bg-gray-600 items-center justify-center mx-auto absolute top-1 right-0 left-3/3 mt-2 mr-2 z-50">
         <span class="text-md font-extralight">
             <i class="fas fa-sun"></i>
         </span>
@@ -37,5 +37,6 @@ export default {
 background-color: #282828;
 transform: translateX(19px);
 transition: transform 0.3s linear;
+z-index:100;
 }
 </style>

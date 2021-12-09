@@ -2,7 +2,6 @@
   <header :class="{'scrolled-nav': scrollPosition}">
     <nav>
       <div class="branding">
-          S
       </div>
       <ul v-show="!mobile" class="navigation">
         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
@@ -32,10 +31,29 @@ export default {
   data() {
     return {
       scrollPosition: null,
-      mobile: true,
-      mobileNav: true,
+      mobile: null,
+      mobileNav: null,
       windowWidth: null,
     };
+  },
+  created() {
+    window.addEventListener('resize', this.checkScreen);
+    this.checkScreen();
+  },
+  methods: {
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav;
+    },
+
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 750) {
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+      this.mobileNav = false;
+    },
   },
 };
 
@@ -44,7 +62,7 @@ export default {
 <style lang="scss" scoped>
 
 header {
-  z-index:99;
+  z-index:10;
   width:100%;
   /* position:fixed; */
   transition: 0.5 ease all;
@@ -93,6 +111,7 @@ header {
       align-items:center;
       flex:1;
       justify-content: flex-end;
+      margin-right:6em;
     }
 
     .icon {
@@ -114,20 +133,22 @@ header {
     }
 
     .dropdown-nav {
+      background:white;
       display:flex;
       flex-direction: column;
       position:fixed;
       width:100%;
       max-width:250px;
       height: 100%;
-      top:0;
+      top:40px;
       left:0;
+      z-index:20;
 
       li {
         margin-left:0;
-        .link {
+        /* .link {
           color:#000;
-        }
+        } */
       }
     }
     }
