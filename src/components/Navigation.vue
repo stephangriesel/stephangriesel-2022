@@ -33,7 +33,7 @@ export default {
     return {
       scrollPosition: null,
       mobile: true,
-      mobileNav: null,
+      mobileNav: true,
       windowWidth: null,
     };
   },
@@ -88,12 +88,47 @@ header {
       align-items: center;
       }
 
+    .navigation {
+      display:flex;
+      align-items:center;
+      flex:1;
+      justify-content: flex-end;
+    }
+
     .icon {
       display:flex;
       align-items:center;
       position:absolute;
       top:15px;
       left:24px;
+
+      i {
+        cursor:pointer;
+        font-size: 24px;
+        transition: 0.8s ease all;
+      }
+    }
+
+    .icon-active {
+      transform: rotate(180deg)
+    }
+
+    .dropdown-nav {
+      display:flex;
+      flex-direction: column;
+      position:fixed;
+      width:100%;
+      max-width:250px;
+      height: 100%;
+      top:0;
+      left:0;
+
+      li {
+        margin-left:0;
+        .link {
+          color:#000;
+        }
+      }
     }
     }
 }
