@@ -107,8 +107,8 @@ header {
       padding-bottom: 4px;
       border-bottom: 1px solid transparent;
       &:hover {
-        color:#989809;
-        border-color: #989809;
+        color:#6484a3;
+        border-color: #6484a3;
       }
     }
     .branding {
@@ -132,6 +132,7 @@ header {
       position:absolute;
       top:15px;
       left:24px;
+      z-index:102;
 
       i {
         cursor:pointer;
@@ -146,13 +147,14 @@ header {
 
     .dropdown-nav {
       background:white;
+      color:#000;
       display:flex;
       flex-direction: column;
       position:fixed;
       width:100%;
-      max-width:250px;
+      max-width:125px;
       height: 100%;
-      top:40px;
+      top:60px;
       left:0;
       z-index:20;
 
@@ -163,6 +165,19 @@ header {
         } */
       }
     }
+
+    .mobile-nav-enter-active, .mobile-nav-leave-active  {
+      transition: 1s ease all;
+    }
+
+    .mobile-nav-enter-from, .mobile-nav-leave-to {
+      transform: translateX(-250px);
+    }
+
+    .mobile-nav-enter-to {
+      transform: translateX(0);
+    }
+
     }
 }
 
@@ -170,9 +185,9 @@ header {
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
 
   .navigation {
-    background:#FFF;
+    background:rgb(255, 255, 255);
     color:rgb(68, 68, 68);
-    height:20px;
+    padding:5px;
     transition: ease-in-out 1s;
   }
 }
