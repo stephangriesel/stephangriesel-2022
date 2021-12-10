@@ -1,5 +1,5 @@
 <template>
-  <header :class="{'scrolled-nav': scrollPosition}">
+  <header :class="{'scrolled-nav': scrolledNav}">
     <nav>
       <div class="branding">
       </div>
@@ -30,7 +30,7 @@ export default {
   name: 'navigation',
   data() {
     return {
-      scrollPosition: null,
+      scrolledNav: null,
       mobile: null,
       mobileNav: null,
       windowWidth: null,
@@ -40,11 +40,21 @@ export default {
     window.addEventListener('resize', this.checkScreen);
     this.checkScreen();
   },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+  },
   methods: {
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav;
     },
-
+    updateScroll() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 200) {
+        this.scrolledNav = true;
+        return;
+      }
+      this.scrolledNav = false;
+    },
     checkScreen() {
       this.windowWidth = window.innerWidth;
       if (this.windowWidth <= 750) {
@@ -107,11 +117,13 @@ header {
       }
 
     .navigation {
+      position: fixed;
       display:flex;
       align-items:center;
       flex:1;
       justify-content: flex-end;
       margin-right:6em;
+      z-index: 101;
     }
 
     .icon {
@@ -152,5 +164,16 @@ header {
       }
     }
     }
+}
+
+.scrolled-nav {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+
+  .navigation {
+    background:#FFF;
+    color:rgb(68, 68, 68);
+    height:20px;
+    transition: ease-in-out 1s;
+  }
 }
 </style>
