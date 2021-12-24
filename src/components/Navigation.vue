@@ -5,9 +5,9 @@
       </div>
       <ul v-show="!mobile" class="navigation">
         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-        <li><router-link class="link" :to="{name: ''}">About</router-link></li>
-        <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
-        <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+        <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+        <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
+        <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
       </ul>
       <div class="icon">
         <i @click="toggleMobileNav" v-show="mobile" class="fa fa-bars" :class="{'icon-active' : mobileNav}"></i>
@@ -15,9 +15,9 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-          <li><router-link class="link" :to="{name: ''}">About</router-link></li>
-          <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
-          <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+          <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+          <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
+          <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
        </ul>
       </transition>
     </nav>

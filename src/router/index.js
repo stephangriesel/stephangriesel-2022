@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
+import About from '../views/About.vue';
+import Portfolio from '../views/Portfolio.vue';
+import Contact from '../views/Contact.vue';
 
 const routes = [
   {
@@ -7,6 +10,22 @@ const routes = [
     name: 'Home',
     component: Home,
   },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio,
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact,
+  },
+  // need to have this line break for eslinter ¯\_(ツ)_/¯
 ];
 
 const router = createRouter({
