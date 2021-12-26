@@ -12,6 +12,10 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'max-len': 0
+    'max-len': 0,
+    "linebreak-style": 0,
+    "object-curly-spacing": "off",
+    'operator-linebreak': 0,
+    "prefer-template": false
   },
 };
