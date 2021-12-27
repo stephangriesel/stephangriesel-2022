@@ -16,6 +16,6 @@ module.exports = {
     "linebreak-style": 0,
     "object-curly-spacing": "off",
     'operator-linebreak': 0,
-    "prefer-template": false
+    "prefer-template": 0
   },
 };
