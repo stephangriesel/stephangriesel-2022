@@ -14,17 +14,17 @@
     </section>
   </div>
   <div class="parallax"></div>
-  <div class='aboutme'>
+  <div class='text-container'>
     <h1>Something about me</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
   </div>
   <div class="parallax2"></div>
-  <div class='aboutme'>
+  <div class='text-container'>
     <h1>Something about me</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
   </div>
   <div class="parallax3"></div>
-  <div class='aboutme'>
+  <div class='text-container'>
     <h1>Something about me</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
   </div>
@@ -119,7 +119,7 @@ export default {
   background-size: cover;
 }
 
-.aboutme {
+.text-container {
   height:800px;
   display:flex;
   justify-content: center;
