@@ -13,6 +13,11 @@
       </div>
     </section>
   </div>
+    <div class='aboutme'>
+    <h1>Something about me</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+  </div>
+    <div class="parallax"></div>
 </template>
 
 <script>
@@ -68,4 +73,23 @@ export default {
     }
   }
 }
+
+/* PARALLAX */
+
+.parallax {
+  background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
+  min-height:500px;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutme {
+  height:800px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
 </style>
