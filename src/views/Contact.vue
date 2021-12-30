@@ -18,16 +18,19 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
   </div>
     <div class="parallax4"></div>
+  <Footer />
 </template>
 
 <script>
 
 import Darkmode from '../components/Darkmode.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Contact',
   components: {
     Darkmode,
+    Footer,
   },
 };
 </script>
