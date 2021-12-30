@@ -37,6 +37,6 @@ export default {
 background-color: #282828;
 transform: translateX(19px);
 transition: transform 0.3s linear;
-z-index:100;
+z-index:999999999;
 }
 </style>

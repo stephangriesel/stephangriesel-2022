@@ -11,6 +11,7 @@
         </h2>
         <hr />
       </div>
+      <Footer />
     </section>
   </div>
 </template>
@@ -18,12 +19,13 @@
 <script>
 
 import Darkmode from '../components/Darkmode.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Home',
   components: {
     Darkmode,
-
+    Footer,
   },
 };
 </script>

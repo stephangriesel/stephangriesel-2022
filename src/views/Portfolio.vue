@@ -39,7 +39,6 @@ export default {
   name: 'Portfolio',
   components: {
     Darkmode,
-
   },
 };
 </script>

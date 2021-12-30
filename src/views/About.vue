@@ -39,8 +39,6 @@ export default {
   components: {
     Darkmode,
   },
-  setup() {
-  },
 };
 </script>
 
@@ -86,7 +84,7 @@ export default {
 }
 
 /* PARALLAX */
-.parallax {
+/* .parallax {
   background-image:url('https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg');
   min-height:800px;
   background-attachment:fixed;
@@ -117,7 +115,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .text-container {
   height:800px;

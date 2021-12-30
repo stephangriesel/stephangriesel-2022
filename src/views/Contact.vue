@@ -28,7 +28,6 @@ export default {
   name: 'Contact',
   components: {
     Darkmode,
-
   },
 };
 </script>
