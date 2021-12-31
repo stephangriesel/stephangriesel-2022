@@ -1,6 +1,7 @@
 <template>
 <div class="app dark:bg-gray-800 dark:text-gray-200">
   <Navigation />
+  <Darkmode />
   <router-view />
 </div>
 </template>
@@ -9,11 +10,23 @@
 
 import './assets/tailwind.css';
 import Navigation from './components/Navigation.vue';
+import Darkmode from './components/Darkmode.vue';
 
 export default {
   name: 'App',
   components: {
     Navigation,
+    Darkmode,
+  },
+  mounted() {
+    const checkbox = document.querySelector('#checkbox');
+    const html = document.querySelector('html');
+
+    const toggleDarkMode = () => (
+      checkbox.checked ? html.classList.add('dark') :
+        html.classList.remove('dark')
+    );
+    toggleDarkMode();
   },
 };
 </script>

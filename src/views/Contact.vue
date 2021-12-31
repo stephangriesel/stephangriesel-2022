@@ -1,5 +1,5 @@
 <template>
-  <Darkmode/>
+  <!-- <Darkmode/> -->
   <div class="portfolio">
     <section class="hero">
       <div class="hero-text container">
@@ -23,14 +23,24 @@
 
 <script>
 
-import Darkmode from '../components/Darkmode.vue';
+// import Darkmode from '../components/Darkmode.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Contact',
   components: {
-    Darkmode,
+    // Darkmode,
     Footer,
+  },
+  mounted() {
+    const checkbox = document.querySelector('#checkbox');
+    const html = document.querySelector('html');
+
+    const toggleDarkMode = () => (
+      checkbox.checked ? html.classList.add('dark') :
+        html.classList.remove('dark')
+    );
+    toggleDarkMode();
   },
 };
 </script>
