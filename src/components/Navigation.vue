@@ -122,7 +122,6 @@ header {
       align-items:center;
       flex:1;
       justify-content: flex-end;
-      margin-right:6em;
       z-index: 101;
     }
 
@@ -187,7 +186,6 @@ header {
   .navigation {
     background:rgb(255, 255, 255);
     color:rgb(68, 68, 68);
-    padding:5px;
     transition: ease-in-out 1s;
   }
 }
