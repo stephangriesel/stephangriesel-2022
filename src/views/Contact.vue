@@ -1,5 +1,4 @@
 <template>
-  <!-- <Darkmode/> -->
   <div class="portfolio">
     <section class="hero">
       <div class="hero-text container">
@@ -13,9 +12,16 @@
       </div>
     </section>
   </div>
-    <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+  <div class='text-container'>
+    <form action="https://form.taxi/s/jpnu0sjk" method="POST">
+    <label for="Name">Name:</label>
+    <input type="text" name="Name">
+    <label for="Email">Email</label>
+    <input type="email" name="Email">
+    <label for="Message">Message</label>
+    <textarea name="Message"></textarea>
+    <button type="submit" value="Send">SEND</button>
+    </form>
   </div>
     <div class="parallax4"></div>
   <Footer />
@@ -23,32 +29,18 @@
 
 <script>
 
-// import Darkmode from '../components/Darkmode.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Contact',
   components: {
-    // Darkmode,
     Footer,
-  },
-  mounted() {
-    const checkbox = document.querySelector('#checkbox');
-    const html = document.querySelector('html');
-
-    const toggleDarkMode = () => (
-      checkbox.checked ? html.classList.add('dark') :
-        html.classList.remove('dark')
-    );
-    toggleDarkMode();
   },
 };
 </script>
 
 <style lang="scss">
 .hero {
-  /* background-image: url("../assets/hero-bg.png");
-  background-attachment: fixed; */
   position: relative;
   height: 100vh;
   img {
@@ -88,9 +80,9 @@ export default {
 
 /* PARALLAX */
 
-.parallax {
+.parallax4 {
   background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
-  min-height:500px;
+  min-height:30vh;
   background-attachment:fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,10 +90,20 @@ export default {
 }
 
 .text-container {
-  height:800px;
-  display:flex;
-  justify-content: center;
-  align-content: center;
+  /* height:300px; */
+  form {
+    display:flex;
+    flex-direction: column;
+  }
+  input, textarea {
+    border: 1px rgb(169, 169, 169) solid;
+    margin: 5px 0;
+    padding:10px;
+  }
+  button  {
+    background: rgb(169, 169, 169);
+    padding: 10px;
+  }
 }
 
 </style>

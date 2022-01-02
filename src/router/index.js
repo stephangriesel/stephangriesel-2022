@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Portfolio from '../views/Portfolio.vue';
 import Contact from '../views/Contact.vue';
+import ContactSuccess from '../views/ContactSuccess.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact,
+  },
+  {
+    path: '/contactsuccess',
+    name: 'ContactSuccess',
+    component: ContactSuccess,
   },
   // need to have this line break for eslinter ¯\_(ツ)_/¯
 ];

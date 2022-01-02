@@ -1,5 +1,4 @@
 <template>
-  <!-- <Darkmode/> -->
   <div class="portfolio">
     <section class="hero">
       <div class="hero-text container">
@@ -34,32 +33,18 @@
 
 <script>
 
-// import Darkmode from '../components/Darkmode.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Portfolio',
   components: {
-    // Darkmode,
     Footer,
-  },
-  mounted() {
-    const checkbox = document.querySelector('#checkbox');
-    const html = document.querySelector('html');
-
-    const toggleDarkMode = () => (
-      checkbox.checked ? html.classList.add('dark') :
-        html.classList.remove('dark')
-    );
-    toggleDarkMode();
   },
 };
 </script>
 
 <style lang="scss">
 .hero {
-  /* background-image: url("../assets/hero-bg.png");
-  background-attachment: fixed; */
   position: relative;
   height: 100vh;
   img {

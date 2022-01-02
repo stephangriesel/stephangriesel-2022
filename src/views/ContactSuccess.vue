@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
+  <div class="portfolio">
     <section class="hero">
       <div class="hero-text container">
         <h4>StephanGriesel</h4>
         <hr />
         <h2>
-          <span class="gradient">always</span><br />
-          <span class="gradient2">CURIOUS</span>
+          thank<br />
+          YOU
         </h2>
         <hr />
       </div>
-      <Footer />
     </section>
   </div>
+  <div class='text-container'>
+    <form>
+    Chat soon!
+    </form>
+  </div>
+    <div class="parallax4"></div>
+  <Footer />
 </template>
 
 <script>
@@ -20,7 +26,7 @@
 import Footer from '../components/Footer.vue';
 
 export default {
-  name: 'Home',
+  name: 'Contact',
   components: {
     Footer,
   },
@@ -29,31 +35,8 @@ export default {
 
 <style lang="scss">
 .hero {
-  /* background-image: url("../assets/hero-bg.png");
-  background-attachment: fixed; */
   position: relative;
   height: 100vh;
-  .gradient {
-    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 56%, rgb(43, 58, 85) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-  }
-  @keyframes move {
-  50% {
-    background-image: linear-gradient(262deg, rgb(0, 0, 0) 0%, rgb(129, 168, 226) 56%, rgb(78, 95, 138) 100%);
-  }
-}
-  .gradient2 {
-    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(144, 151, 255) 56%, rgb(78, 95, 138) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    /* animation: move 1s infinite; */
-  }
-  @keyframes move {
-  50% {
-    background-image: linear-gradient(262deg, rgb(0, 0, 0) 0%, rgb(90, 90, 90) 56%, rgb(16, 21, 39) 100%);
-  }
-}
   img {
     object-fit: cover;
     height: 100%;
@@ -88,4 +71,33 @@ export default {
     }
   }
 }
+
+/* PARALLAX */
+
+.parallax4 {
+  background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
+  min-height:30vh;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-container {
+  /* height:300px; */
+  form {
+    display:flex;
+    flex-direction: column;
+  }
+  input, textarea {
+    border: 1px rgb(169, 169, 169) solid;
+    margin: 5px 0;
+    padding:10px;
+  }
+  button  {
+    background: rgb(169, 169, 169);
+    padding: 10px;
+  }
+}
+
 </style>

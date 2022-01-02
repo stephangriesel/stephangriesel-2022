@@ -1,5 +1,4 @@
 <template>
-  <!-- <Darkmode /> -->
   <div class="about">
     <section class="hero">
       <div class="hero-text container">
@@ -33,32 +32,18 @@
 </template>
 
 <script>
-// import Darkmode from '../components/Darkmode.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'About',
   components: {
-    // Darkmode,
     Footer,
-  },
-  mounted() {
-    const checkbox = document.querySelector('#checkbox');
-    const html = document.querySelector('html');
-
-    const toggleDarkMode = () => (
-      checkbox.checked ? html.classList.add('dark') :
-        html.classList.remove('dark')
-    );
-    toggleDarkMode();
   },
 };
 </script>
 
 <style lang="scss">
 .hero {
-  /* background-image: url("../assets/hero-bg.png");
-  background-attachment: fixed; */
   position: relative;
   height: 100vh;
   img {
@@ -95,40 +80,6 @@ export default {
     }
   }
 }
-
-/* PARALLAX */
-/* .parallax {
-  background-image:url('https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg');
-  min-height:800px;
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax2 {
-  background-image:url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg');
-  min-height:500px;
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax3 {
-  background-image:url('https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg');
-  min-height:800px;
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax4 {
-  background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
-  min-height:500px;
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .text-container {
   height:800px;
