@@ -23,7 +23,6 @@
     <button type="submit" value="Send">SEND</button>
     </form>
   </div>
-    <div class="parallax4"></div>
   <Footer />
 </template>
 

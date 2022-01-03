@@ -33,27 +33,7 @@ export default {
   background-attachment: fixed; */
   position: relative;
   height: 100vh;
-  .gradient {
-    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 56%, rgb(43, 58, 85) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-  }
-  @keyframes move {
-  50% {
-    background-image: linear-gradient(262deg, rgb(0, 0, 0) 0%, rgb(129, 168, 226) 56%, rgb(78, 95, 138) 100%);
-  }
-}
-  .gradient2 {
-    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(144, 151, 255) 56%, rgb(78, 95, 138) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    /* animation: move 1s infinite; */
-  }
-  @keyframes move {
-  50% {
-    background-image: linear-gradient(262deg, rgb(0, 0, 0) 0%, rgb(90, 90, 90) 56%, rgb(16, 21, 39) 100%);
-  }
-}
+
   img {
     object-fit: cover;
     height: 100%;
