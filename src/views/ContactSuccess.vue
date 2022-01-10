@@ -83,21 +83,4 @@ export default {
   background-size: cover;
 }
 
-.text-container {
-  /* height:300px; */
-  form {
-    display:flex;
-    flex-direction: column;
-  }
-  input, textarea {
-    border: 1px rgb(169, 169, 169) solid;
-    margin: 5px 0;
-    padding:10px;
-  }
-  button  {
-    background: rgb(169, 169, 169);
-    padding: 10px;
-  }
-}
-
 </style>

@@ -95,13 +95,24 @@ export default {
     flex-direction: column;
   }
   input, textarea {
-    border: 1px rgb(169, 169, 169) solid;
+    border: 1px rgb(216, 216, 216) solid;
+    border-radius: 8px;
     margin: 5px 0;
     padding:10px;
   }
   button  {
-    background: rgb(169, 169, 169);
+    background: rgb(255, 255, 255);
+    border: 1px rgb(216, 216, 216) solid;
+    color:#000000;
     padding: 10px;
+    background-image: linear-gradient(0, #bbbbbb, #c5c5c5);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    &:hover {
+      background-size: 100%;
+      color: #fff;
+  }
   }
 }
 
