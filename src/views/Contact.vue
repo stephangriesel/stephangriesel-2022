@@ -39,6 +39,20 @@ export default {
 </script>
 
 <style lang="scss">
+
+:root {
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #dcdcdc;
+  --greyLight-3: #dddddd;
+  --greyDark: #777777;
+}
+
+$shadow: .3rem .3rem .6rem var(--greyLight-2),
+-.2rem -.2rem .5rem var(--white);
+$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
+inset -.2rem -.2rem .5rem var(--white);
+
 .hero {
   position: relative;
   height: 100vh;
@@ -95,12 +109,24 @@ export default {
     flex-direction: column;
   }
   input, textarea {
-    border: 1px rgb(216, 216, 216) solid;
-    border-radius: 8px;
-    margin: 5px 0;
-    padding:10px;
+    margin: 0.8rem 0;
+    width: 20.4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+    box-shadow: $inner-shadow;
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+    &::placeholder { color: var(--greyLight-3); }
+    &:focus { outline: none; box-shadow: $shadow; }
+  }
+
   }
   button  {
+    margin:10px 0;
     background: rgb(255, 255, 255);
     border: 1px rgb(216, 216, 216) solid;
     color:#000000;
@@ -113,7 +139,5 @@ export default {
       background-size: 100%;
       color: #fff;
   }
-  }
 }
-
 </style>
