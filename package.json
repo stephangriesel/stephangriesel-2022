@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "twbuild": "tailwind build src/css/tailwind.css -o dist/css/tailwind.css",
-    "build-storybook": "build-storybook"
+    "twbuild": "tailwind build src/css/tailwind.css -o dist/css/tailwind.css"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
