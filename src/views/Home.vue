@@ -5,8 +5,8 @@
         <h4>StephanGriesel</h4>
         <hr />
         <h2>
-          <span class="gradient">always</span><br />
-          <span class="gradient2">CURIOUS</span>
+          <span class="animate__animated animate__fadeIn animate__delay-0.5s">always</span><br />
+          <span class="animate__animated animate__fadeIn animate__delay-1s">CURIOUS</span>
         </h2>
         <hr />
       </div>
