@@ -14,12 +14,18 @@
   </div>
   <div class='text-container'>
     <form action="https://form.taxi/s/jpnu0sjk" method="POST">
-    <label for="Name">Name:</label>
-    <input type="text" name="Name">
-    <label for="Email">Email</label>
-    <input type="email" name="Email">
-    <label for="Message">Message</label>
-    <textarea name="Message"></textarea>
+    <div class="form-name flex-column">
+      <label for="Name">Name</label>
+      <input type="text" name="Name">
+    </div>
+    <div class="form-email flex-column">
+      <label for="Email">Email</label>
+      <input type="email" name="Email">
+    </div>
+    <div class="form-message flex-column">
+      <label for="Message">Message</label>
+      <textarea name="Message"></textarea>
+    </div>
     <button type="submit" value="Send">SEND</button>
     </form>
   </div>
@@ -102,12 +108,18 @@ inset -.2rem -.2rem .5rem var(--white);
   background-size: cover;
 }
 
+.flex-column {
+  display:flex;
+  flex-direction: column;
+}
+
 .text-container {
-  /* height:300px; */
   form {
     display:flex;
     flex-direction: column;
+    position: relative;
   }
+
   input, textarea {
     margin: 0.8rem 0;
     width: 20.4rem;
@@ -123,6 +135,10 @@ inset -.2rem -.2rem .5rem var(--white);
     &::placeholder { color: var(--greyLight-3); }
     &:focus { outline: none; box-shadow: $shadow; }
   }
+
+  textarea {
+      height:12rem;
+    }
 
   }
   button  {
