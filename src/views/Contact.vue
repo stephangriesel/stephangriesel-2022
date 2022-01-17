@@ -14,16 +14,16 @@
   </div>
   <div class='text-container'>
     <form action="https://form.taxi/s/jpnu0sjk" method="POST">
-    <div class="form-name flex-column">
-      <label for="Name">Name</label>
+    <div class="form-group flex-column">
+      <label class="floating-label" for="Name">Name</label>
       <input type="text" name="Name">
     </div>
-    <div class="form-email flex-column">
-      <label for="Email">Email</label>
+    <div class="form-group flex-column">
+      <label class="floating-label" for="Email">Email</label>
       <input type="email" name="Email">
     </div>
-    <div class="form-message flex-column">
-      <label for="Message">Message</label>
+    <div class="form-group flex-column">
+      <label class="floating-label" for="Message">Message</label>
       <textarea name="Message"></textarea>
     </div>
     <button type="submit" value="Send">SEND</button>
@@ -120,6 +120,23 @@ inset -.2rem -.2rem .5rem var(--white);
     position: relative;
   }
 
+  .form-group {
+    position:relative;
+    margin-top:15px;
+    margin-bottom: 25px;
+    .floating-label {
+      position:absolute;
+      pointer-events:none;
+      top:30px;
+      left:20px;
+      font-size:22px;
+      transition: all 0.1s ease;
+    }
+    input:focus {
+      background:red;
+      top:10px;
+      }
+    }
   input, textarea {
     margin: 0.8rem 0;
     width: 20.4rem;
