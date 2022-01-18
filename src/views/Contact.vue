@@ -12,28 +12,27 @@
       </div>
     </section>
   </div>
-  <div class='text-container'>
-    <form action="https://form.taxi/s/jpnu0sjk" method="POST">
-    <div class="form-group flex-column">
-      <label class="floating-label" for="Name">Name</label>
-      <input type="text" name="Name">
-    </div>
-    <div class="form-group flex-column">
-      <label class="floating-label" for="Email">Email</label>
-      <input type="email" name="Email">
-    </div>
-    <div class="form-group flex-column">
-      <label class="floating-label" for="Message">Message</label>
-      <textarea name="Message"></textarea>
-    </div>
-    <button type="submit" value="Send">SEND</button>
+  <div class="text-container">
+    <form action="https://form.taxi/s/jpnu0sjk" method="POST" class="form">
+      <div class="field">
+        <input type="text" />
+        <label>Name</label>
+      </div>
+      <div class="field">
+        <input type="email" />
+        <label>E-Mail</label>
+      </div>
+      <div class="field">
+        <textarea></textarea>
+        <label>Message</label>
+      </div>
+      <button type="submit" value="Send">SEND</button>
     </form>
   </div>
   <Footer />
 </template>
 
 <script>
-
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -45,19 +44,18 @@ export default {
 </script>
 
 <style lang="scss">
-
 :root {
-  --white: #FFFFFF;
-  --greyLight-1: #E4EBF5;
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
   --greyLight-2: #dcdcdc;
   --greyLight-3: #dddddd;
   --greyDark: #777777;
 }
 
-$shadow: .3rem .3rem .6rem var(--greyLight-2),
--.2rem -.2rem .5rem var(--white);
-$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
-inset -.2rem -.2rem .5rem var(--white);
+$shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+  -0.2rem -0.2rem 0.5rem var(--white);
+$inner-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+  inset -0.2rem -0.2rem 0.5rem var(--white);
 
 .hero {
   position: relative;
@@ -89,7 +87,7 @@ inset -.2rem -.2rem .5rem var(--white);
     }
     hr:nth-child(4) {
       height: 6px;
-      background-color: #ECECEC;
+      background-color: #ececec;
       border: none;
       max-width: 85px;
       margin-top: 16px;
@@ -100,44 +98,48 @@ inset -.2rem -.2rem .5rem var(--white);
 /* PARALLAX */
 
 .parallax4 {
-  background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
-  min-height:30vh;
-  background-attachment:fixed;
+  background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg");
+  min-height: 30vh;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.flex-column {
-  display:flex;
-  flex-direction: column;
-}
+/* FORM */
 
 .text-container {
   form {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    position: relative;
   }
 
-  .form-group {
-    position:relative;
-    margin-top:15px;
-    margin-bottom: 25px;
-    .floating-label {
-      position:absolute;
-      pointer-events:none;
-      top:30px;
-      left:20px;
-      font-size:22px;
-      transition: all 0.1s ease;
-    }
-    input:focus {
-      background:red;
-      top:10px;
-      }
-    }
-  input, textarea {
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    order: -1;
+    padding-left: 15px;
+    transition: all 0.3s ease-in;
+    transform: translateY(58px);
+    pointer-events: none;
+    font-size: 20px;
+  }
+
+  input:focus + label {
+    transform: translateY(5px);
+    font-size: 14px;
+  }
+
+  textarea:focus + label {
+    transform: translateY(5px);
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
     margin: 0.8rem 0;
     width: 20.4rem;
     height: 4rem;
@@ -149,28 +151,32 @@ inset -.2rem -.2rem .5rem var(--white);
     background: none;
     font-family: inherit;
     color: var(--greyDark);
-    &::placeholder { color: var(--greyLight-3); }
-    &:focus { outline: none; box-shadow: $shadow; }
+    &::placeholder {
+      color: var(--greyLight-3);
+    }
+    &:focus {
+      outline: none;
+      box-shadow: $shadow;
+    }
   }
 
   textarea {
-      height:12rem;
-    }
-
+    height: 12rem;
   }
-  button  {
-    margin:10px 0;
-    background: rgb(255, 255, 255);
-    border: 1px rgb(216, 216, 216) solid;
-    color:#000000;
-    padding: 10px;
-    background-image: linear-gradient(0, #bbbbbb, #c5c5c5);
-    background-size: 0;
-    transition: .8s;
-    background-repeat: no-repeat;
-    &:hover {
-      background-size: 100%;
-      color: #fff;
+}
+button {
+  margin: 10px 0;
+  background: rgb(255, 255, 255);
+  border: 1px rgb(216, 216, 216) solid;
+  color: #000000;
+  padding: 10px;
+  background-image: linear-gradient(0, #bbbbbb, #c5c5c5);
+  background-size: 0;
+  transition: 0.8s;
+  background-repeat: no-repeat;
+  &:hover {
+    background-size: 100%;
+    color: #fff;
   }
 }
 </style>
