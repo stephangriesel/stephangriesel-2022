@@ -5,7 +5,7 @@
       </div>
       <ul v-show="!mobile" class="navigation">
         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-        <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+        <!-- <li><router-link class="link" :to="{name: 'About'}">About</router-link></li> -->
         <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
         <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
       </ul>
@@ -15,7 +15,7 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-          <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+          <!-- <li><router-link class="link" :to="{name: 'About'}">About</router-link></li> -->
           <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
           <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
        </ul>
@@ -145,7 +145,7 @@ header {
     }
 
     .dropdown-nav {
-      background:white;
+      /* background:rgba(255, 255, 255, 0.1); */
       color:#000;
       display:flex;
       flex-direction: column;
@@ -184,9 +184,10 @@ header {
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
 
   .navigation {
-    background:rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0.0);
     color:rgb(68, 68, 68);
     transition: ease-in-out 1s;
+    transform: scale(0.0);
   }
 }
 </style>

@@ -14,33 +14,33 @@
   </div>
   <div class="parallax"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>consulitate.com</h1>
+    <p>domain registration, website hosting, design & development</p>
   </div>
   <div class="parallax2"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>sandysoil.properties</h1>
+    <p>estate agent vaal triangle region (south africa)</p>
   </div>
   <div class="parallax3"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>krisbach.com</h1>
+    <p>music artist from south africa</p>
   </div>
   <div class="parallax5"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>colemantraders.co.za</h1>
+    <p>fuel, plant hire & container services from south africa</p>
   </div>
   <div class="parallax6"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>happyskin.co.za</h1>
+    <p>beauty salon in south africa</p>
   </div>
   <div class="parallax7"></div>
   <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+    <h1>chipchop.nl</h1>
+    <p>furniture builder from netherlands</p>
   </div>
     <Footer />
 </template>
@@ -99,7 +99,7 @@ export default {
 /* PARALLAX */
 .parallax {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561397/stephangriesel/Screenshot_from_2022-03-06_10-49-13_elkvhv.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ export default {
 }
 .parallax2 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-51-05_usnnca.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ export default {
 }
 .parallax3 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-52-38_f0pn5o.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ export default {
 }
 .parallax5 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-50-34_hrvef7.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ export default {
 }
 .parallax6 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-53-09_gmv5j6.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@ export default {
 }
 .parallax7 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561409/stephangriesel/Screenshot_from_2022-03-06_10-49-40_tvqk5g.png');
-  min-height:50vh;
+  min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
@@ -147,12 +147,17 @@ export default {
 }
 
 .text-container {
-  height:70vh;
+  height:30vh;
   display:flex;
   max-width: 1140px;
   margin: 0 auto;
   justify-content: center;
   align-content: center;
+  align-items: center;
+  h1 {
+    margin:0 10px;
+    font-weight:900;
+  }
 }
 
 </style>
