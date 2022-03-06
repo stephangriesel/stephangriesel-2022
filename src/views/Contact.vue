@@ -95,20 +95,10 @@ $inner-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
   }
 }
 
-/* PARALLAX */
-
-.parallax4 {
-  background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg");
-  min-height: 30vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* FORM */
 
 .text-container {
+  height:100vh;
   form {
     display: flex;
     flex-direction: column;
