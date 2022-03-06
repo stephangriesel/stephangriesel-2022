@@ -27,7 +27,21 @@
     <h1>Something about me</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
   </div>
-    <div class="parallax4"></div>
+  <div class="parallax5"></div>
+  <div class='text-container'>
+    <h1>Something about me</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+  </div>
+  <div class="parallax6"></div>
+  <div class='text-container'>
+    <h1>Something about me</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+  </div>
+  <div class="parallax7"></div>
+  <div class='text-container'>
+    <h1>Something about me</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
+  </div>
     <Footer />
 </template>
 
@@ -84,40 +98,56 @@ export default {
 
 /* PARALLAX */
 .parallax {
-  background-image:url('https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg');
-  min-height:800px;
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561397/stephangriesel/Screenshot_from_2022-03-06_10-49-13_elkvhv.png');
+  min-height:50vh;
   background-attachment:fixed;
-  background-position: center;
+  background-position-y: 10%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax2 {
-  background-image:url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg');
-  min-height:500px;
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-51-05_usnnca.png');
+  min-height:50vh;
   background-attachment:fixed;
-  background-position: center;
+  background-position-y: 10%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax3 {
-  background-image:url('https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg');
-  min-height:800px;
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-52-38_f0pn5o.png');
+  min-height:50vh;
   background-attachment:fixed;
-  background-position: center;
+  background-position-y: 10%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax4 {
-  background-image:url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg');
-  min-height:500px;
+.parallax5 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-50-34_hrvef7.png');
+  min-height:50vh;
   background-attachment:fixed;
-  background-position: center;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax6 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-53-09_gmv5j6.png');
+  min-height:50vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax7 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561409/stephangriesel/Screenshot_from_2022-03-06_10-49-40_tvqk5g.png');
+  min-height:50vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .text-container {
-  height:800px;
+  height:70vh;
   display:flex;
   max-width: 1140px;
   margin: 0 auto;
