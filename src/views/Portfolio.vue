@@ -103,6 +103,70 @@ export default {
   background-attachment:fixed;
   background-position-y: 10%;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax2 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-51-05_usnnca.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax3 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-52-38_f0pn5o.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax5 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-50-34_hrvef7.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax6 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561407/stephangriesel/Screenshot_from_2022-03-06_10-53-09_gmv5j6.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax7 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561409/stephangriesel/Screenshot_from_2022-03-06_10-49-40_tvqk5g.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-container {
+  height:30vh;
+  display:flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  h1 {
+    margin:0 10px;
+    font-weight:900;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+.parallax {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561397/stephangriesel/Screenshot_from_2022-03-06_10-49-13_elkvhv.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax2 {
@@ -145,19 +209,6 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.text-container {
-  height:30vh;
-  display:flex;
-  max-width: 1140px;
-  margin: 0 auto;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  h1 {
-    margin:0 10px;
-    font-weight:900;
-  }
 }
 
 </style>
