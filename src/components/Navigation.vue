@@ -145,7 +145,7 @@ header {
     }
 
     .dropdown-nav {
-      /* background:rgba(255, 255, 255, 0.1); */
+      background:rgba(255, 255, 255, 0.8);
       color:#000;
       display:flex;
       flex-direction: column;
