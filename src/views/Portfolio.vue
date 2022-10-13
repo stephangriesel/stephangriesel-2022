@@ -5,8 +5,8 @@
         <h4>StephanGriesel</h4>
         <hr />
         <h2>
-          port<br />
-          FOLIO
+          <span class="animate__animated animate__fadeIn animate__delay-0.5s">port</span><br />
+          <span class="animate__animated animate__fadeIn animate__delay-1s">FOLIO</span>
         </h2>
         <hr />
       </div>
