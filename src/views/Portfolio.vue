@@ -42,6 +42,11 @@
     <h1>chipchop.nl</h1>
     <p>furniture builder from netherlands</p>
   </div>
+  <div class="parallax8"></div>
+  <div class='text-container'>
+    <h1>whsilverbacks.co.uk</h1>
+    <p>specialists in stretch tent, temporary structures and event construction offering versatile solutions for any event</p>
+  </div>
     <Footer />
 </template>
 
@@ -203,6 +208,14 @@ export default {
 }
 .parallax7 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561409/stephangriesel/Screenshot_from_2022-03-06_10-49-40_tvqk5g.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax8 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1665635516/stephangriesel/Screenshot_2022-10-13_06.29.46_at0brp.png');
   min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
