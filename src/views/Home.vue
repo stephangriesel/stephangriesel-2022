@@ -29,8 +29,6 @@ export default {
 
 <style lang="scss">
 .hero {
-  /* background-image: url("../assets/hero-bg.png");
-  background-attachment: fixed; */
   position: relative;
   height: 100vh;
 

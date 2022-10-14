@@ -14,10 +14,6 @@
     </section>
   </div>
   <div class="parallax"></div>
-  <!-- <div class='text-container'>
-    <h1>Something about me</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ad, quas tenetur voluptatum dicta esse dolores voluptate hic rerum nobis, autem voluptatem! Quis, dolorum doloremque nobis atque delectus veritatis.</p>
-  </div> -->
   <Footer />
 </template>
 
