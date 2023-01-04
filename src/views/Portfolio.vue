@@ -17,6 +17,11 @@
     <h1>consulitate.com</h1>
     <p>domain registration, website hosting, design & development</p>
   </div>
+  <div class="parallax9"></div>
+  <div class='text-container'>
+    <h1>bouwerbosch.co.za</h1>
+    <p>south african artist landing page for latest album</p>
+  </div>
   <div class="parallax2"></div>
   <div class='text-container'>
     <h1>sandysoil.properties</h1>
@@ -144,6 +149,14 @@ export default {
 }
 .parallax7 {
   background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1646561409/stephangriesel/Screenshot_from_2022-03-06_10-49-40_tvqk5g.png');
+  min-height:70vh;
+  background-attachment:fixed;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax9 {
+  background-image:url('https://res.cloudinary.com/dvme554nj/image/upload/v1672763489/stephangriesel/Screenshot_2023-01-03_17.30.37_iaj7bp.png');
   min-height:70vh;
   background-attachment:fixed;
   background-position-y: 10%;
